@@ -2,12 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello world') {
-            steps {
-                echo 'Hello World'
-                sh "pwd"
-            }
-        }
+       
         stage('Process_VoterFiles') {
             steps {
                sh "sudo python3 ny.py"
