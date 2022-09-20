@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
+        }
         stage('Pyhton') {
             steps {
                sh "pyhton3 pyhton.py"
