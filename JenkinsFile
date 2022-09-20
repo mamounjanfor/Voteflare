@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Pyhton') {
             steps {
-               sh "python pyhton.py"
+               sh "python3 pyhton.py"
                }
         }
     }
