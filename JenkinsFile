@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Ingest_VoterFiles_to_S3') {
             steps {
-               sh "aws s3 cp nationaldob/ s3://voteflaremamoun/"
+               sh "aws s3 cp /nationaldob s3://voteflaremamoun/"
 
                }
         }
