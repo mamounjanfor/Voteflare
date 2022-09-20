@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Pyhton') {
             steps {
-               sh "python3 ny.py"
+               sh "sudo python3 ny.py"
                }
         }
     }
