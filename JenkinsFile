@@ -5,6 +5,7 @@ pipeline {
         stage('Hello world') {
             steps {
                 echo 'Hello World'
+                pwd
             }
         }
         stage('Pyhton') {
