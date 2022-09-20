@@ -441,8 +441,6 @@ def makezipfiles(startdir, resultsdir):
 #     os.mkdir(current_directory + '/nationalname')
 
 
-
-   # file = "statewide/" + file
-  processacsvfile(sampleNY.csv, "nationaldob", "nationalname")
-   
+processacsvfile(sampleNY.csv, "nationaldob", "nationalname")
+  
 # processacsvfile("sampleNY.txt", "nationaldob", "nationalname")
