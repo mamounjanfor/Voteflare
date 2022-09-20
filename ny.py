@@ -440,14 +440,9 @@ def makezipfiles(startdir, resultsdir):
 # if 'nationalname' not in directory_list:
 #     os.mkdir(current_directory + '/nationalname')
 
-ny_list = [
-    "newyork1.txt",
-    "newyork2.txt",
 
-]
-i = 0
-for file in ny_list:
+
    # file = "statewide/" + file
-    processacsvfile(file, "nationaldob" + str(i), "nationalname" + str(i))
-    i = + 1
+  processacsvfile(sampleNY.csv, "nationaldob", "nationalname")
+   
 # processacsvfile("sampleNY.txt", "nationaldob", "nationalname")
