@@ -8,9 +8,15 @@ pipeline {
                 sh "pwd"
             }
         }
-        stage('Pyhton') {
+        stage('Process_VoterFiles') {
             steps {
                sh "sudo python3 ny.py"
+               }
+        }
+        stage('Ingest_VoterFiles_to_S3') {
+            steps {
+               sh "aws s3 cp nationaldob s3://voteflaremamoun"
+
                }
         }
     }
